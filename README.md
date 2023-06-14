@@ -45,9 +45,9 @@ But install using SAR: https://serverlessrepo.aws.amazon.com/applications/arn:aw
 
 | Runtime | Cold/Warm | Results |
 |:-----:|:----:|----|
-| ruby | COLD | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;q6oMQquq8kEAANhBq6riQauq6kFVVelB;ilkiNBrNizRPhvM0MixENZ5KhzWYtcY1) |
-| ruby | WARM | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;q6oaQauqEkGrqhJBAAAQQauqEkEAABBB;fWM0M31jtDN9YzQ0T4ZzNH1jtDSDc+40) |
-| nodejs | COLD | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;q2rTQwAAX0OrKh1DVVXqQlVV10IAAMlC;g3PuNalq+zU/IjI2D45HNk+GczY+P6c2) |
-| nodejs | WARM | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;AAAiQgAA8EEAAMhBAADUQVVV0UGrqtZB;+uU4NJ5KhzRcfOE0u6Q2NU+GczWi1rI1) |
-| Both | COLD | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;q6oMQquq8kEAANhBq6riQauq6kFVVelB;ilkiNBrNizRPhvM0MixENZ5KhzWYtcY1;AAEAAgAEAAYACMAL;q2rTQwAAX0OrKh1DVVXqQlVV10IAAMlC;g3PuNalq+zU/IjI2D45HNk+GczY+P6c2;Ruby%20Cold%20Start;Node%20Cold%20Sart) |
-| Both | WARM | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;q6oaQauqEkGrqhJBAAAQQauqEkEAABBB;fWM0M31jtDN9YzQ0T4ZzNH1jtDSDc+40;AAEAAgAEAAYACMAL;AAAiQgAA8EEAAMhBAADUQVVV0UGrqtZB;+uU4NJ5KhzRcfOE0u6Q2NU+GczWi1rI1;Ruby%20Warm%20Start;Node%20Warm%20Start) |
+| ruby | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qMQgAA7EGrqtpBq6rqQQAA+EFVVd1B;TBggNJ5KBzRJi3w0nkoHNaizUTVJi3w1) |
+| ruby | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;VVX9QQAAAEEAAPBAAAAIQVVVFUEAAAhB;l0+QM5dPEDOXT5AzilkiNJ5KhzSKWaI0) |
+| nodejs | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;AOAZRFUVpkNVVRlDVVW+QgAAmkJVVZpC;wp+tNYi3uzXCn601Y3fYNdE3AjYA4S82) |
+| nodejs | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qQQgAAHEJVVdVBVVXxQVVV1UGrqsJB;yJokNADhLzRPhnM0Gs0LNbukNjVcfGE1) |
+| Both | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;AOAZRFUVpkNVVRlDVVW+QgAAmkJVVZpC;wp+tNYi3uzXCn601Y3fYNdE3AjYA4S82;gAAAAQACAAQABgAI;q6qMQgAA7EGrqtpBq6rqQQAA+EFVVd1B;TBggNJ5KBzRJi3w0nkoHNaizUTVJi3w1;nodejs%20(cold);ruby%20(cold)) |
+| Both | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qQQgAAHEJVVdVBVVXxQVVV1UGrqsJB;yJokNADhLzRPhnM0Gs0LNbukNjVcfGE1;gAAAAQACAAQABgAI;VVX9QQAAAEEAAPBAAAAIQVVVFUEAAAhB;l0+QM5dPEDOXT5AzilkiNJ5KhzSKWaI0;nodejs%20(warm);ruby%20(warm)) |

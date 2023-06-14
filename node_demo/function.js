@@ -1,6 +1,7 @@
 const AWS = require("aws-sdk");
 const ssm = new AWS.SSM();
-const dynamodb = new AWS.DynamoDB.DocumentClient();
+const dynamodb = new AWS.DynamoDB();
+
 const getTableName = (function () {
   let TABLE_NAME = "";
   return async function () {
@@ -14,20 +15,21 @@ const getTableName = (function () {
   };
 })();
 
+// Maybe this helps cold start?
+getTableName();
+
 exports.lambda_handler = async (event, context) => {
   try {
-    const item = {
-      id: new Date().toISOString(), // Generate a unique ID for the item
-      message: event.message,
-      source: 'Node'
-    };
-
     const putParams = {
       TableName: await getTableName(),
-      Item: item,
+      Item: {
+        id: { S: new Date().toISOString() },
+        message: { S: event.message },
+        source: { S: "Node" },
+      },
     };
 
-    await dynamodb.put(putParams).promise();
+    await dynamodb.putItem(putParams).promise();
     console.log("Successfully inserted item into DynamoDB");
 
     return {
