@@ -25,12 +25,25 @@ export class AppStack extends cdk.Stack {
       code: lambda.Code.fromAsset("../ruby_demo"),
       memorySize: 256,
       handler: "function.lambda_handler",
-      timeout: cdk.Duration.seconds(15)
+      timeout: cdk.Duration.seconds(5)
     });
 
-    new cdk.CfnOutput(this, "FunctionName", {
+    const lambdaNode = new lambda.Function(this, "LambdaNode", {
+      runtime: lambda.Runtime.NODEJS_16_X,
+      code: lambda.Code.fromAsset("../node_demo"),
+      memorySize: 256,
+      handler: "function.lambda_handler",
+      timeout: cdk.Duration.seconds(5)
+    });
+
+    new cdk.CfnOutput(this, "FunctionNameRuby", {
       exportName: "FunctionNameRuby",
       value: lambdaRuby.functionName,
+    });
+
+    new cdk.CfnOutput(this, "FunctionNameNode", {
+      exportName: "FunctionNameNode",
+      value: lambdaNode.functionName,
     });
 
     new cdk.CfnOutput(this, "TableName", {
@@ -39,10 +52,14 @@ export class AppStack extends cdk.Stack {
     });
 
     parameter.grantRead(lambdaRuby);
+    parameter.grantRead(lambdaNode);
+
     table.grantReadWriteData(lambdaRuby);
+    table.grantReadWriteData(lambdaNode);
 
     table.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
     parameter.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
     lambdaRuby.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
+    lambdaNode.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
   }
 }
