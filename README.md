@@ -2,6 +2,7 @@
 
 ## To deploy sample lambads:
 ```
+dotnet publish ./dotnet_demo -c Release -o ./dotnet_demo/dist
 cd iac
 npm install -g aws-cdk@2.73.0
 yarn install

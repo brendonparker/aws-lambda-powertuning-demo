@@ -37,6 +37,14 @@ export class AppStack extends cdk.Stack {
       timeout: cdk.Duration.seconds(5)
     });
 
+    const lambdaDotnet = new lambda.Function(this, "LambdaDotnet", {
+      runtime: lambda.Runtime.NODEJS_16_X,
+      code: lambda.Code.fromAsset("../dotnet_demo/dist"),
+      memorySize: 256,
+      handler: "dotnet_demo::dotnet_demo.Function::FunctionHandler",
+      timeout: cdk.Duration.seconds(10)
+    });
+
     new cdk.CfnOutput(this, "FunctionNameRuby", {
       exportName: "FunctionNameRuby",
       value: lambdaRuby.functionName,
@@ -54,13 +62,13 @@ export class AppStack extends cdk.Stack {
 
     parameter.grantRead(lambdaRuby);
     parameter.grantRead(lambdaNode);
+    parameter.grantRead(lambdaDotnet);
 
     table.grantReadWriteData(lambdaRuby);
     table.grantReadWriteData(lambdaNode);
+    table.grantReadWriteData(lambdaDotnet);
 
     table.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
     parameter.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
-    lambdaRuby.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
-    lambdaNode.applyRemovalPolicy(cdk.RemovalPolicy.DESTROY);
   }
 }
