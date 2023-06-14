@@ -6,3 +6,5 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 13.0"
+gem "aws-sdk-dynamodb", "1.86.0"
+gem "aws-sdk-ssm", "1.151.0"
