@@ -6,7 +6,7 @@ const getTableName = (function () {
   return async function () {
     if (!TABLE_NAME) {
       const tableResponse = await ssm
-        .getParameter({ Name: "/powertooldemo/tablename" })
+        .getParameter({ Name: "/powertuningdemo/tablename" })
         .promise();
       TABLE_NAME = tableResponse.Parameter.Value;
     }

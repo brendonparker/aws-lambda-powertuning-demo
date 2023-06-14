@@ -3,7 +3,7 @@ require 'aws-sdk-dynamodb'
 
 $dynamodb = Aws::DynamoDB::Client.new()
 $ssm = Aws::SSM::Client.new()
-$table_name = $ssm.get_parameter(name: '/powertooldemo/tablename', with_decryption: true).parameter.value
+$table_name = $ssm.get_parameter(name: '/powertuningdemo/tablename', with_decryption: true).parameter.value
 
 def lambda_handler(event:, context:)
   message = event['message']
@@ -21,7 +21,7 @@ def lambda_handler(event:, context:)
 
   # Insert the item into DynamoDB
   begin
-    dynamodb.put_item(put_item_params)
+    $dynamodb.put_item(put_item_params)
     puts "Successfully inserted item into DynamoDB"
   rescue StandardError => e
     puts "Error inserting item into DynamoDB: #{e.message}"

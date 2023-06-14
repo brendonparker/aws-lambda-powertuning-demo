@@ -13,10 +13,11 @@ export class AppStack extends cdk.Stack {
         name: "id",
         type: dynamodb.AttributeType.STRING,
       },
+      writeCapacity: 25
     });
 
     const parameter = new ssm.StringParameter(this, "TableNameParameter", {
-      parameterName: "/powertooldemo/tablename",
+      parameterName: "/powertuningdemo/tablename",
       stringValue: table.tableName,
     });
 
