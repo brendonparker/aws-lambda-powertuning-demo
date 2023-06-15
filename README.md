@@ -46,11 +46,13 @@ But install using SAR: https://serverlessrepo.aws.amazon.com/applications/arn:aw
 
 | Runtime | Cold/Warm | Results |
 |:-----:|:----:|----|
-| ruby | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qMQgAA7EGrqtpBq6rqQQAA+EFVVd1B;TBggNJ5KBzRJi3w0nkoHNaizUTVJi3w1) |
-| ruby | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;VVX9QQAAAEEAAPBAAAAIQVVVFUEAAAhB;l0+QM5dPEDOXT5AzilkiNJ5KhzSKWaI0) |
-| nodejs | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;AOAZRFUVpkNVVRlDVVW+QgAAmkJVVZpC;wp+tNYi3uzXCn601Y3fYNdE3AjYA4S82) |
-| nodejs | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qQQgAAHEJVVdVBVVXxQVVV1UGrqsJB;yJokNADhLzRPhnM0Gs0LNbukNjVcfGE1) |
+| ruby | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;q6qMQlVVAUIAAOhBq6raQauq3kFVVd1Bq6rqQQ==;TBggNBTSFDQhyII0SYv8NHZoPTVJi3w1mLXGNQ==) |
+| ruby | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;q6rSQauqIkEAABhBq6oKQauqIkEAABhBq6oqQQ==;T4ZzM3BtRjN9Y7QzilkiNBTSlDR9Y7Q0XrgRNQ==) |
+| nodejs | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;AEAtRKtqlEOrqhVDq6qxQquqq0IAAJJCAACRQg==;ulPDNVZspzVFHak1rq7INTZwETbImiQ2VsNxNg==) |
+| nodejs | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;q6pqQquq+kGrqrZBVVXNQVVVzUGrqspBq6qqQQ==;XwkFNJdPEDRpck80VoHqNADhLzVWgWo1XriRNQ==) |
 | dotnet | COLD | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;VfWlRKuKHURVFZxDVVVVQwCAQ0MAADdD;OCe7NhfasTZQcbA2zfO0NuD53DYQhBc3) |
 | dotnet | WARM | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;AACIQQAA8ECrqgpBAAAIQauqAkGrqupA;kVSZM5dPkDOKWSI0T4ZzNIpZojTm9NM0) |
-| Both | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;AOAZRFUVpkNVVRlDVVW+QgAAmkJVVZpC;wp+tNYi3uzXCn601Y3fYNdE3AjYA4S82;gAAAAQACAAQABgAI;q6qMQgAA7EGrqtpBq6rqQQAA+EFVVd1B;TBggNJ5KBzRJi3w0nkoHNaizUTVJi3w1;nodejs%20(cold);ruby%20(cold)) |
-| Both | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qQQgAAHEJVVdVBVVXxQVVV1UGrqsJB;yJokNADhLzRPhnM0Gs0LNbukNjVcfGE1;gAAAAQACAAQABgAI;VVX9QQAAAEEAAPBAAAAIQVVVFUEAAAhB;l0+QM5dPEDOXT5AzilkiNJ5KhzSKWaI0;nodejs%20(warm);ruby%20(warm)) |
+| ruby/node | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;q6qMQlVVAUIAAOhBq6raQauq3kFVVd1Bq6rqQQ==;TBggNBTSFDQhyII0SYv8NHZoPTVJi3w1mLXGNQ==;gAAAAQACAAQABgAIwAs=;AEAtRKtqlEOrqhVDq6qxQquqq0IAAJJCAACRQg==;ulPDNVZspzVFHak1rq7INTZwETbImiQ2VsNxNg==;ruby;nodejs) |
+| ruby/node | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;q6rSQauqIkEAABhBq6oKQauqIkEAABhBq6oqQQ==;T4ZzM3BtRjN9Y7QzilkiNBTSlDR9Y7Q0XrgRNQ==;gAAAAQACAAQABgAIwAs=;q6pqQquq+kGrqrZBVVXNQVVVzUGrqspBq6qqQQ==;XwkFNJdPEDRpck80VoHqNADhLzVWgWo1XriRNQ==;ruby;nodejs) |
+| dotnet/node | COLD | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;VfWlRKuKHURVFZxDVVVVQwCAQ0MAADdD;OCe7NhfasTZQcbA2zfO0NuD53DYQhBc3;gAAAAQACAAQABgAIwAs=;AEAtRKtqlEOrqhVDq6qxQquqq0IAAJJCAACRQg==;ulPDNVZspzVFHak1rq7INTZwETbImiQ2VsNxNg==;dotnet;nodejs) |
+| dotnet/node | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAIwAs=;q6pqQquq+kGrqrZBVVXNQVVVzUGrqspBq6qqQQ==;XwkFNJdPEDRpck80VoHqNADhLzVWgWo1XriRNQ==;AAEAAgAEAAYACMAL;AACIQQAA8ECrqgpBAAAIQauqAkGrqupA;kVSZM5dPkDOKWSI0T4ZzNIpZojTm9NM0;nodejs;dotnet) |
