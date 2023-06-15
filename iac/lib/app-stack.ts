@@ -38,7 +38,7 @@ export class AppStack extends cdk.Stack {
     });
 
     const lambdaDotnet = new lambda.Function(this, "LambdaDotnet", {
-      runtime: lambda.Runtime.NODEJS_16_X,
+      runtime: lambda.Runtime.DOTNET_6,
       code: lambda.Code.fromAsset("../dotnet_demo/dist"),
       memorySize: 256,
       handler: "dotnet_demo::dotnet_demo.Function::FunctionHandler",
