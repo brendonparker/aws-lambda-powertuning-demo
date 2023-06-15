@@ -50,5 +50,7 @@ But install using SAR: https://serverlessrepo.aws.amazon.com/applications/arn:aw
 | ruby | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;VVX9QQAAAEEAAPBAAAAIQVVVFUEAAAhB;l0+QM5dPEDOXT5AzilkiNJ5KhzSKWaI0) |
 | nodejs | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;AOAZRFUVpkNVVRlDVVW+QgAAmkJVVZpC;wp+tNYi3uzXCn601Y3fYNdE3AjYA4S82) |
 | nodejs | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qQQgAAHEJVVdVBVVXxQVVV1UGrqsJB;yJokNADhLzRPhnM0Gs0LNbukNjVcfGE1) |
+| dotnet | COLD | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;VfWlRKuKHURVFZxDVVVVQwCAQ0MAADdD;OCe7NhfasTZQcbA2zfO0NuD53DYQhBc3) |
+| dotnet | WARM | [Results](https://lambda-power-tuning.show/#AAEAAgAEAAYACMAL;AACIQQAA8ECrqgpBAAAIQauqAkGrqupA;kVSZM5dPkDOKWSI0T4ZzNIpZojTm9NM0) |
 | Both | COLD | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;AOAZRFUVpkNVVRlDVVW+QgAAmkJVVZpC;wp+tNYi3uzXCn601Y3fYNdE3AjYA4S82;gAAAAQACAAQABgAI;q6qMQgAA7EGrqtpBq6rqQQAA+EFVVd1B;TBggNJ5KBzRJi3w0nkoHNaizUTVJi3w1;nodejs%20(cold);ruby%20(cold)) |
 | Both | WARM | [Results](https://lambda-power-tuning.show/#gAAAAQACAAQABgAI;q6qQQgAAHEJVVdVBVVXxQVVV1UGrqsJB;yJokNADhLzRPhnM0Gs0LNbukNjVcfGE1;gAAAAQACAAQABgAI;VVX9QQAAAEEAAPBAAAAIQVVVFUEAAAhB;l0+QM5dPEDOXT5AzilkiNJ5KhzSKWaI0;nodejs%20(warm);ruby%20(warm)) |
